@@ -19,7 +19,7 @@ function App() {
       <main>
         {showRegister ? <RegisterForm /> : <LoginForm />}
 
-        <div style={{ textAlign: "center", marginTop: "1rem" }}>
+        <div className="toggle-container">
           <button type="button" onClick={handleToggle}>
             {showRegister
               ? "¿Ya tienes cuenta? Inicia sesión"
