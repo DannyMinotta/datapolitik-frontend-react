@@ -75,3 +75,17 @@ button[type="submit"]:hover {
 .toggle-container button:hover {
   background-color: #030712;
 }
+
+.message {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.message.error {
+  color: #b91c1c;
+}
+
+.message.success {
+  color: #15803d;
+}
