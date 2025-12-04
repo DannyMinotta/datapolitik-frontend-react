@@ -1,0 +1,56 @@
+CHECKLIST TÉCNICA - MÓDULO FRONTEND DE AUTENTICACIÓN
+Proyecto: DataPolitik (MVP)
+Evidencia: GA7-220501096-AA4-EV03
+
+1. ESTRUCTURA DEL PROYECTO
+[ ] El proyecto fue creado con Vite + React.
+[ ] La estructura de carpetas incluye: src/components/auth, src/services, src/styles.
+[ ] El componente raíz App.jsx importa y utiliza LoginForm y RegisterForm.
+[ ] Existe un archivo de estilos específico para el módulo de autenticación (src/styles/auth.css).
+
+2. INTERFAZ DE USUARIO (LOGIN Y REGISTRO)
+[ ] El formulario de inicio de sesión muestra campos para correo electrónico y contraseña.
+[ ] El formulario de registro muestra campos para nombre, correo electrónico y contraseña.
+[ ] Ambas pantallas incluyen títulos descriptivos (Iniciar sesión / Registrarse en DataPolitik).
+[ ] Existe un botón para alternar entre la vista de login y la vista de registro.
+[ ] Los formularios están centrados visualmente y contenidos en una tarjeta.
+
+3. VALIDACIONES EN EL FRONTEND
+[ ] El formulario de login valida que los campos de correo y contraseña no estén vacíos.
+[ ] El formulario de login valida que el correo tenga un formato básico válido (contiene "@").
+[ ] El formulario de registro valida que nombre, correo y contraseña no estén vacíos.
+[ ] El formulario de registro valida que el correo tenga un formato básico válido.
+[ ] El formulario de registro valida que la contraseña tenga al menos 6 caracteres.
+
+4. SERVICIO DE AUTENTICACIÓN SIMULADO (authService.js)
+[ ] El archivo src/services/authService.js está creado y documentado.
+[ ] La función registerUser guarda los usuarios en localStorage.
+[ ] La función registerUser verifica si ya existe un usuario con el mismo correo.
+[ ] La función loginUser verifica que el usuario exista por correo.
+[ ] La función loginUser verifica que la contraseña coincida con la registrada.
+[ ] Ambas funciones devuelven Promises y simulan un retardo en la respuesta (setTimeout).
+
+5. MENSAJES DE ESTADO (UX)
+[ ] Se muestran mensajes de error en color rojo cuando la validación falla (clase .message.error).
+[ ] Se muestran mensajes de éxito en color verde cuando el registro o inicio de sesión es correcto (clase .message.success).
+[ ] El texto de los mensajes está en español y es comprensible para el usuario final.
+[ ] Los botones muestran un estado de carga (texto "Ingresando..." o "Registrando...") mientras se ejecuta la operación.
+
+6. ESTÁNDARES DE CODIFICACIÓN Y COMENTARIOS
+[ ] Los nombres de componentes y funciones son descriptivos (LoginForm, RegisterForm, registerUser, loginUser, etc.).
+[ ] Se utilizan funciones flecha o funciones estándar de manera consistente.
+[ ] El código incluye comentarios que explican la responsabilidad de los componentes principales.
+[ ] Se documentan las funciones clave del servicio de autenticación (registerUser, loginUser).
+[ ] No hay código muerto o comentado innecesario.
+
+7. VERSIONAMIENTO (GIT Y GITHUB)
+[ ] El proyecto tiene un repositorio Git inicializado en local.
+[ ] Se ha configurado el remoto origin apuntando a GitHub.
+[ ] Se han realizado al menos dos commits con mensajes descriptivos (inicio del proyecto y lógica de autenticación).
+[ ] Los cambios están sincronizados con la rama main del repositorio remoto en GitHub.
+[ ] El archivo CHECKLIST_FRONTEND_AUTENTICACION.txt está incluido en el repositorio.
+
+8. PREPARACIÓN PARA LA ENTREGA
+[ ] El proyecto compila y se ejecuta correctamente con "npm run dev".
+[ ] La carpeta node_modules NO se incluye en la carpeta comprimida (está ignorada por Git).
+[ ] El nombre de la carpeta comprimida sigue la convención: NOMBRE_APELLIDO_AA4_EV03.

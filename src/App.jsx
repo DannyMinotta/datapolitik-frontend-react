@@ -1,3 +1,7 @@
+// App.jsx
+// Componente raíz del módulo frontend de autenticación de DataPolitik.
+// Permite alternar entre el formulario de inicio de sesión y el formulario de registro.
+
 import React, { useState } from "react";
 import LoginForm from "./components/auth/LoginForm";
 import RegisterForm from "./components/auth/RegisterForm";
