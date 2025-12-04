@@ -1,0 +1,5 @@
+Proyecto: DataPolitik (MVP) - Módulo frontend de autenticación (login y registro)
+Evidencia: GA7-220501096-AA4-EV03 - Componente frontend del proyecto formativo
+
+Enlace al repositorio en GitHub:
+https://github.com/DannyMinotta/datapolitik-frontend-react
